@@ -1,0 +1,150 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&family=Noto+Sans+Old+Permic&family=Poppins&display=swap');
+
+*{
+     margin: 0;
+     padding: 0;
+}
+html,body{
+     width: 100vw;
+     overflow-x:hidden ;
+     height: 110%;
+     background-color:  rgb(42, 38, 38);
+     color: white;  
+     font-family: 'Inclusive Sans', sans-serif;
+    
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 38, 38);
+}
+.nav{
+       list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2vw;
+        position: fixed; 
+          padding: 2vh;
+          top: 0;
+        width: 100%;
+        z-index: 99;
+        background-color: rgb(42, 38, 38); 
+    }
+    .nav li{
+        color: white;
+        font-size: 2vw;
+        position: relative;
+        cursor: pointer;
+        text-transform: capitalize;
+    }
+    .nav li::after{
+        content: '';
+        position: absolute;
+        width: 0%;
+        height: 2px;
+        background: radial-gradient(gray,white);
+        bottom: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+    .nav li:hover::after{
+           width: 100%;
+    }
+    .nav a{
+         text-decoration: none;
+         color: white;
+    }
+    .home{
+        border-bottom: 2px solid gray;
+        display: flex;
+          height: 100vh;
+          position: relative;
+          top: 1.5vh;
+          background-color: rgb(42, 38, 38);
+          justify-content: center;
+          align-items: center;
+          gap:1.8vw ;
+          font-family: 'Inclusive Sans', sans-serif;
+    }
+    #about{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 50%;
+     margin-left: 30px;
+     gap: 10px;
+    }
+    #about h1{
+          font-size: 5vw;
+          padding: 5px;
+          border-radius: 30px;
+          color: rgb(243, 234, 234);
+    }
+    #about p{
+          font-size: 2.3vw;
+          color: rgb(205, 205, 205);
+    }
+    .home-img{
+          border-radius: 20%;
+          overflow: hidden;
+          width: fit-content;
+          height: fit-content;
+          }
+          .home-img1{
+              transition: all 0.5s;
+              cursor: pointer;
+          }  
+          .home-img:hover  .home-img1 {
+               transform: scale(1.1);
+          }
+
+
+   .films{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+   }       
+   .films h1{
+       font-size: 3.5vw;
+   }
+   .number{
+      margin-top: 10px;
+   }
+   .films span{
+         font-size: 4vw;
+   }
+   .card img
+    {
+      width: 200px;
+   }
+   a{
+      text-decoration: none;
+   }
+   .card{
+    display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+   }
+   .card div{
+      width: fit-content;
+      color: white;
+   }
+   .movies-list{
+      margin-left: 20px;
+         display: flex;
+         overflow-x: scroll;  
+         gap: 10px;
+         width: 100vw;
+   }
+   .movies-list::-webkit-scrollbar{
+       display:none;
+   }
+
+
